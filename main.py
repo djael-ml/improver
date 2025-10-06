@@ -56,10 +56,11 @@ while True:
             'reg add "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects" /v VisualFXSetting /t REG_DWORD /d 1 /f',
             'reg add "HKCU\\Control Panel\\Desktop" /v UserPreferencesMask /t REG_BINARY /d 9e1e078010000000 /f'
         ]
-        print("Successfuly enabled Windows Animations")
 
         for cmd in cmds:
             os.system(cmd)
+            
+        print("Successfuly enabled Windows Animations")
 
     
 
